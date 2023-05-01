@@ -45,5 +45,5 @@ const eventSchema = mongoose.Schema({
 
 eventSchema.index({ location: 'text' });
 const eventModel = mongoose.model("eventModel", eventSchema);
-// eventModel.createIndexes();
+eventModel.createIndexes();
 export default eventModel;
